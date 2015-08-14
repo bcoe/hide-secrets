@@ -6,7 +6,8 @@ var defaultBadWords = [
   'token',
   'auth',
   'secret',
-  'passphrase'
+  'passphrase',
+  'card'
 ]
 
 var replacement = '[SECRET]'
