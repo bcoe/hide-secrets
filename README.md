@@ -1,5 +1,10 @@
 # hide-secrets
 
+[![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url]
+[![js-standard-style][standard-image]][standard-url]
+
 ```js
 var hide = require('hide-secrets')
 
@@ -35,3 +40,12 @@ Currently the following fields are obfuscated:
 ## License
 
 ISC
+
+[travis-url]: https://travis-ci.org/bcoe/hide-secrets
+[travis-image]: https://img.shields.io/travis/bcoe/hide-secrets.svg
+[coveralls-url]: https://coveralls.io/github/bcoe/hide-secrets
+[coveralls-image]: https://img.shields.io/coveralls/bcoe/hide-secrets.svg
+[npm-url]: https://npmjs.org/package/hide-secrets
+[npm-image]: https://img.shields.io/npm/v/hide-secrets.svg
+[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[standard-url]: https://github.com/feross/standard
