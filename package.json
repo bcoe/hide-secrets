@@ -1,0 +1,25 @@
+{
+  "name": "hide-secrets",
+  "version": "1.0.0",
+  "description": "for when you want to log objects, but hide certain restricted fields, e.g., passwords.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bcoe/hide-secrets.git"
+  },
+  "keywords": [
+    "secret",
+    "password",
+    "hide",
+    "obfuscate"
+  ],
+  "author": "Ben Coe <ben@npmjs.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcoe/hide-secrets/issues"
+  },
+  "homepage": "https://github.com/bcoe/hide-secrets#readme"
+}
