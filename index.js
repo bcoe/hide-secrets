@@ -18,7 +18,7 @@ module.exports = function (obj, opts) {
 
   return traverse(obj).map(function (n) {
     for (var i = 0, key; (key = this.path[i]) !== undefined; i++) {
-      if (~defaultBadWords.indexOf(key)) {
+      if (~opts.badWords.indexOf(key)) {
         if (typeof n === 'string') return replaceString(n)
       }
     }
