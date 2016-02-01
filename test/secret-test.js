@@ -85,6 +85,7 @@ tap.test('it hides secrets in inner objects and arrays', function (t) {
 tap.test('it does not explode if a null object is passed in', function (t) {
   var out = secret(null)
   t.equal(out, null)
+  t.end()
 })
 
 tap.test('it does not explode if a string is passed in', function (t) {
