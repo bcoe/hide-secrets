@@ -103,3 +103,13 @@ tap.test('it does not hide empty strings', function (t) {
   t.equal(out.auth, '')
   t.end()
 })
+
+tap.test('it uses custom bad words', function (t) {
+  var obj = {
+    identity: '-----BEGIN RSA PRIVATE KEY-----'
+  }
+
+  var out = secret(obj, { badWords: 'identity' })
+  t.equal(out.identity, '[SECRET]')
+  t.end()
+})
