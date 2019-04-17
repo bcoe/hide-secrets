@@ -37,23 +37,21 @@ Currently the following fields are obfuscated by default:
 
 `password`, `pass`, `token`, `auth`, `secret`, `passphrase`.
 
-If you want to hide `key` not in above:
+If you want to override this list of obfuscated terms, simply:
 
-```
-const badWords = [
-  'yourkey',
-]
-```
+1. create your own list of terms:
 
-And then:
-```
-const hideKeys = { badWords }
-```
+    ```js
+    const badWords = [
+      'super-secret-1', 'double-secret-probation'
+    ]
+    ```
 
-Finally:
-```
-console.log(hide(obj, hideKeys))
-```
+1. pass this as configuration to hide-secrets:
+
+    ```js
+    console.log(hide(obj, {badWords}))
+    ```
 
 Any keys within obj that are contained within the `badWords` array will be hidden.
 
