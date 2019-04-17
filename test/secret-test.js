@@ -39,7 +39,7 @@ tap.test('it hides secrets in arrays', function (t) {
 
 tap.test('it hides secrets in objects', function (t) {
   var obj = {
-    auth: {foo: 'a', bar: 'b'},
+    auth: { foo: 'a', bar: 'b' },
     email: 'ben@example.com'
   }
 
@@ -70,7 +70,7 @@ tap.test('it hides secrets in inner objects and arrays', function (t) {
   var obj = {
     credentials: {
       body: {
-        password: {foo: 'bar'},
+        password: { foo: 'bar' },
         pass: ['abc123']
       }
     }
