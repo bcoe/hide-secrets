@@ -6,7 +6,8 @@
   "scripts": {
     "pretest": "standard",
     "test": "tap test --coverage",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
