@@ -33,9 +33,29 @@ outputs
 }
 ```
 
-Currently the following fields are obfuscated:
+Currently the following fields are obfuscated by default:
 
 `password`, `pass`, `token`, `auth`, `secret`, `passphrase`.
+
+If you want to hide `key` not in above:
+
+```
+const badWords = [
+  'yourkey',
+]
+```
+
+And then:
+```
+const hideKeys = { badWords }
+```
+
+Finally:
+```
+console.log(hide(obj, hideKeys))
+```
+
+Any keys within obj that are contained within the `badWords` array will be hidden.
 
 ## License
 
